@@ -73,28 +73,27 @@ All resources are managed by Terraform with reusable modules:
 
 ---
 
-## 📁 Directory Structure
+```plaintext
+📁 Directory Structure
 .
-├── main.tf # Root module entrypoint
+├── main.tf            # Root module entrypoint
 ├── variables.tf
 ├── outputs.tf
 ├── iam.tf
 ├── modules/
-│ ├── iam/
-│ │ └── main.tf
-│ ├── prometheus/
-│ │ ├── main.tf
-│ │ ├── user_data.sh
-│ └── exporters/
-│ ├── main.tf
-│ ├── variables.tf
-│ └── user_data.tf
-└── uml_flow.png # Architecture diagram
-
+│   ├── iam/
+│   │   └── main.tf
+│   ├── prometheus/
+│   │   ├── main.tf
+│   │   └── user_data.sh
+│   └── exporters/
+│       ├── main.tf
+│       ├── variables.tf
+│       └── user_data.tf
+└── uml_flow.png     
 
 ---
 
-## 🚀 Quickstart
 
 ### ✅ Prerequisites
 
